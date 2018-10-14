@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>底部导航栏 - 背景色</title>
+  
+  <style type="text/css">
+     #banner {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      background: #607D8B;
+    }
+  </style>
+</head>
+<body class="mdui-bottom-nav-fixed ">
+  <!-- title --><!-- mdui-appbar-scroll-hide -->
+<!--  <div class="mdui-appbar mdui-appbar-fixed "> 
+    <div class="mdui-toolbar">
+      ......
+    </div>  
+  </div> -->
+
+
+
+  <!-- 顶部导航 --><!-- 可以滑动 -->
+<!-- <div id="banner" mdui-headroom>
+  
+<div class="mdui-tab mdui-tab-scrollable" mdui-tab>
+  <a href="#example2-tab1" class="mdui-ripple">web</a>
+  <a href="#example2-tab2" class="mdui-ripple">shopping</a>
+  <a href="#example2-tab3" class="mdui-ripple">videos</a>
+  <a href="#example2-tab4" class="mdui-ripple">images</a>
+  <a href="#example2-tab5" class="mdui-ripple">news</a>
+  <a href="#example2-tab6" class="mdui-ripple">maps</a>
+  <a href="#example2-tab7" class="mdui-ripple">books</a>
+  <a href="#example2-tab8" class="mdui-ripple">flights</a>
+  <a href="#example2-tab9" class="mdui-ripple">apps</a>
+  <a href="#example2-tab10" class="mdui-ripple">dictionary</a>
+</div>
+
+</div> -->
+
+
+<!-- 底部导航菜单 mdui-bottom-nav-text-auto-->
+<div class="mdui-bottom-nav   mdui-color-red"> <!-- mdui-bottom-nav-scroll-hide -->
+  <a href="javascript:$$.activepage('huiyuanri');" class="mdui-ripple mdui-ripple-white mdui-bottom-nav-active">
+    <i class="mdui-icon material-icons">&#xe87c;</i>
+    <label>会员日</label>
+  </a>
+  <a href="javascript:$$.activepage('weishi');" class="mdui-ripple mdui-ripple-white">
+    <i class="mdui-icon material-icons">&#xe038;</i>
+    <label>微视</label>
+  </a>
+  <a href="javascript:$$.activepage('huifuwu');" class="mdui-ripple mdui-ripple-white">
+    <i class="mdui-icon material-icons">&#xe8b1;</i>
+    <label>惠服务</label>
+  </a>
+  <a href="javascript:$$.activepage('huidian');" class="mdui-ripple mdui-ripple-white">
+   <i class="mdui-icon material-icons">&#xe84f;</i>
+    <label>惠店</label>
+  </a>
+    <a href="javascript:$$.activepage('wode');" class="mdui-ripple mdui-ripple-white">
+    <i class="mdui-icon material-icons">&#xe7fd;</i>
+    <label>我的</label>
+  </a>
+</div>
+<!-- 悬浮按钮 -->
+
+<!-- <button class="mdui-fab mdui-fab-fixed mdui-ripple"><i class="mdui-icon material-icons">add</i></button>
+ -->
+<!-- 容器 -->
+<div class="mdui-container">
+  <div class="mdui-row">
+    <div class="mdui-col-xs-12">.mdui-col-xs-12</div>   
+</div>
+  <div class="mdui-row">
+    <div class="mdui-col-xs-12">.mdui-col-xs-12</div>   
+</div>
+  <div class="mdui-row">
+    <div class="mdui-col-xs-12">.mdui-col-xs-12
+        <!-- <div class="mdui-video-container">
+          <iframe height=498 width=510 src="//player.youku.com/embed/XNzUwOTk5MzE2" frameborder=0 allowfullscreen></iframe>
+        </div> -->
+
+    </div>   
+</div>
+  <div class="mdui-row">
+    <div class="mdui-col-xs-12">.mdui-col-xs-12
+           <video class="mdui-video-fluid" controls>
+             <source src="" type="video/mp4">
+           </video>
+    </div>   
+</div>
+
+
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+</div>
+
+<script src="./bottom/js/mdui.min.js"></script>
+<script type="text/javascript">
+  var $$ = mdui.JQ;
+$$.extend({
+  activepage: function (str) {
+    if(str=='huiyuanri'){
+
+    }else if(str=='weishi'){
+alert(str);
+    }else if(str=='huifuwu'){
+
+    }else if(str=='huidian'){
+
+    }else if(str=='wode'){
+
+    }
+    //
+  }
+})
+//$$.activepage('fuck')
+// $$(document).ready(function(){
+//       $$(function()
+//       {
+//            $$('nav').load('/UI/web/System/_Public/nav.html');
+//       });
+// })
+//$$('.mdui-container').html('<scr'+'ipt language=\"javascript\" src=\"../index.html\"></scr'+'ipt>')
+
+$$.ajax({
+  method: 'GET',
+  url: './index.html',
+  data: {
+    key1: 'val1',
+    key2: 'val2'
+  },
+  success: function (data) {
+    console.log(data);
+    $$('.mdui-container').html(data)
+  }
+});
+
+</script>
+<link rel="stylesheet" href="./bottom/css/mdui.min.css"/>
+</body>
+</html>

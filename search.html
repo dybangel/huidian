@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="《今日头条》(TouTiao.com)是一款会自动学习的资讯软件,它会聪明地分析你的兴趣爱好,自动为你推荐喜欢的内容,并且越用越懂你.你关心的,才是头条!">
+<meta name="keywords" content="头条,头条网,今日头条">
+<meta name="robots" content="noindex,follow">
+<title>《今日头条》你关心的,才是头条! - TouTiao.com</title>
+<link type="text/css" rel="stylesheet" href="css/search.css">
+<script type="text/javascript" charset="utf-8" src="js/base.js"></script>
+</head>
+<body class="android">
+<div class="backdrop" ontouchstart="chooseAction(); return false" ontouchmove="return false">
+</div>
+<header id="header" class="relative">
+<div class="top_bar">
+    <div class="abs_l">
+        <a class="btn back" href="javascript:history.back(-1)"></a>
+    </div>
+    <div class="abs_m">
+        搜索
+    </div>
+</div>
+</header>
+<form action="https://m.toutiao.com/search/" method="get" id="search_form" onsubmit="sendSearchEvent(this)">
+    <div id="search_content">
+        <a href="https://m.toutiao.com/search/?need_open_window=1#" class="action_chooser action_toutiao" onclick="chooseAction(); return false"></a>
+        <div class="arrowdown">
+        </div>
+        <input type="search" placeholder="请输入搜索关键词" id="search_input" name="keyword" value="" onchange="changeFrom(this)"><input type="hidden" name="from" id="from" value="search_tab">
+    </div>
+    <div class="action-navigation">
+        <div class="arrowup-shadow">
+        </div>
+        <div class="arrowup">
+        </div>
+        <ul class="navigation-categories">
+            <li><a class="toutiao" href="https://m.toutiao.com/search/?need_open_window=1#" onclick="chooseAction(&#39;toutiao&#39;); return false">新闻</a></li>
+            <li><a class="shenma" href="https://m.toutiao.com/search/?need_open_window=1#" onclick="chooseAction(&#39;shenma&#39;); return false">神马</a></li>
+            <li><a class="baidu" href="https://m.toutiao.com/search/?need_open_window=1#" onclick="chooseAction(&#39;baidu&#39;); return false">百度</a></li>
+        </ul>
+    </div>
+</form>
+<content id="search">
+<div class="hot_words">
+    <ul class="toutiao" style="display: block; transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+        <li><a class="hot_words_link" href="https://m.toutiao.com/search/?from=hotword&amp;keyword=%E7%8E%8B%E6%80%9D%E8%81%AA%E6%8C%BA%E5%BE%90%E6%99%93%E5%86%AC&amp;hot_words=1">王思聪挺徐晓冬</a></li>
+        <li><a class="hot_words_link" href="https://m.toutiao.com/search/?from=hotword&amp;keyword=%E4%BA%91%E5%8D%97%E7%9B%91%E7%8B%B1%E6%AF%92%E8%B4%A9%E8%B6%8A%E7%8B%B1&amp;hot_words=1">云南监狱毒贩越狱</a></li>
+        <li><a class="hot_words_link" href="https://m.toutiao.com/search/?from=hotword&amp;keyword=%E5%A4%AE%E8%A7%86%E8%AF%84%E5%91%A8%E6%9D%B0%E4%BC%A6%E4%BA%8B%E4%BB%B6&amp;hot_words=1">央视评周杰伦事件</a></li>
+        <li><a class="hot_words_link" href="https://m.toutiao.com/search/?from=hotword&amp;keyword=%E5%85%89%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%9E%E7%94%9F&amp;hot_words=1">光量子计算机诞生</a></li>
+        <li><a class="hot_words_link" href="https://m.toutiao.com/search/?from=hotword&amp;keyword=%E5%A5%B3%E8%89%BA%E4%BA%BA%E8%A2%AB%E9%86%89%E6%B1%89%E6%8D%85%E6%AD%BB&amp;hot_words=1">女艺人被醉汉捅死</a></li>
+        <li><a class="hot_words_link" href="https://m.toutiao.com/search/?from=hotword&amp;keyword=%E6%BB%B4%E6%BB%B4%E5%89%AF%E6%80%BB%E8%A3%81%E7%A6%BB%E8%81%8C&amp;hot_words=1">滴滴副总裁离职</a></li>
+        <li><a class="hot_words_link" href="https://m.toutiao.com/search/?from=hotword&amp;keyword=%E6%9D%8E%E4%B8%9C%E5%81%A5%E8%B5%B5%E8%83%A4%E7%86%99%E7%BB%93%E5%A9%9A&amp;hot_words=1">李东健赵胤熙结婚</a></li>
+        <li><a class="hot_words_link" href="https://m.toutiao.com/search/?from=hotword&amp;keyword=%E6%9E%97%E5%BF%97%E7%8E%B2%E4%B8%8E%E5%AF%8C%E5%95%86%E5%91%8A%E5%90%B9&amp;hot_words=1">林志玲与富商告吹</a></li>
+        <li><a class="hot_words_link" href="https://m.toutiao.com/search/?from=hotword&amp;keyword=%E6%89%BE%E4%B8%8D%E5%88%B0%E8%BD%A6%E4%BD%8D%E8%87%AA%E5%B7%B1%E7%94%BB&amp;hot_words=1">找不到车位自己画</a></li>
+        <li><a class="hot_words_link" href="https://m.toutiao.com/search/?from=hotword&amp;keyword=%E8%88%92%E6%B7%87%E5%B4%A9%E6%BA%83%E6%99%92%E8%87%AA%E6%8B%8D%E7%85%A7&amp;hot_words=1">舒淇崩溃晒自拍照</a></li>
+    </ul>
+    <ul class="baidu" onclick="baiduHotWordsClick(event); return false" style="display: none;">
+        <li><a href="http://m.baidu.com/s?from=1007976a&amp;word=%E9%82%93%E8%B6%85%E5%AD%99%E4%BF%AA%E4%B8%BA%E5%A5%B3%E5%BA%86%E7%94%9F">邓超孙俪为女庆生</a></li>
+        <li><a href="http://m.baidu.com/s?from=1007976a&amp;word=%E8%83%A1%E6%AD%8C%E5%9C%A8%E7%BE%8E%E8%BF%91%E7%85%A7%E6%9B%9D%E5%85%89">胡歌在美近照曝光</a></li>
+        <li><a href="http://m.baidu.com/s?from=1007976a&amp;word=%E5%A5%B3%E5%AD%90%E9%81%AD%E8%BF%9B%E6%88%BF%E6%8A%A2%E5%8A%AB">女子遭进房抢劫</a></li>
+        <li><a href="http://m.baidu.com/s?from=1007976a&amp;word=%E4%BC%8A%E6%8B%89%E5%85%8B%E4%B8%80%E5%9F%BA%E5%9C%B0%E9%81%87%E8%A2%AD">伊拉克一基地遇袭</a></li>
+        <li><a href="http://m.baidu.com/s?from=1007976a&amp;word=%E5%8D%97%E4%BA%9A%E5%85%B5%E5%9B%A2%E9%A6%99%E6%B8%AF%E6%BB%8B%E4%BA%8B">南亚兵团香港滋事</a></li>
+        <li><a href="http://m.baidu.com/s?from=1007976a&amp;word=%E5%A4%9A%E5%90%8D%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%AF%81%E5%AE%B9">多名大学生毁容</a></li>
+        <li><a href="http://m.baidu.com/s?from=1007976a&amp;word=%E5%A4%AE%E8%A7%86%E8%AF%84%E5%91%A8%E6%9D%B0%E4%BC%A6%E4%BA%8B%E4%BB%B6">央视评周杰伦事件</a></li>
+        <li><a href="http://m.baidu.com/s?from=1007976a&amp;word=%E5%84%BF%E8%BD%AC%E8%B5%B0%E6%AF%8D%E4%BA%B2107%E4%B8%87">儿转走母亲107万</a></li>
+        <li><a href="http://m.baidu.com/s?from=1007976a&amp;word=%E6%9E%97%E5%BF%97%E7%8E%B2%E4%B8%8E%E5%AF%8C%E5%95%86%E5%91%8A%E5%90%B9">林志玲与富商告吹</a></li>
+        <li><a href="http://m.baidu.com/s?from=1007976a&amp;word=%E7%8E%8B%E6%80%9D%E8%81%AA%E6%8C%BA%E5%BE%90%E6%99%93%E5%86%AC">王思聪挺徐晓冬</a></li>
+    </ul>
+    <ul class="shenma" style="display: none;">
+        <li><a href="http://m.yz.sm.cn/s?q=%E7%8E%8B%E6%80%9D%E8%81%AA%E6%8C%BA%E5%BE%90%E6%99%93%E5%86%AC&amp;from=100041" onclick="shenmaHotWordsClick(event); return false">王思聪挺徐晓冬</a></li>
+        <li><a href="http://m.yz.sm.cn/s?q=%E4%BA%91%E5%8D%97%E7%9B%91%E7%8B%B1%E6%AF%92%E8%B4%A9%E8%B6%8A%E7%8B%B1&amp;from=100041" onclick="shenmaHotWordsClick(event); return false">云南监狱毒贩越狱</a></li>
+        <li><a href="http://m.yz.sm.cn/s?q=%E5%A4%AE%E8%A7%86%E8%AF%84%E5%91%A8%E6%9D%B0%E4%BC%A6%E4%BA%8B%E4%BB%B6&amp;from=100041" onclick="shenmaHotWordsClick(event); return false">央视评周杰伦事件</a></li>
+        <li><a href="http://m.yz.sm.cn/s?q=%E5%85%89%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%9E%E7%94%9F&amp;from=100041" onclick="shenmaHotWordsClick(event); return false">光量子计算机诞生</a></li>
+        <li><a href="http://m.yz.sm.cn/s?q=%E5%A5%B3%E8%89%BA%E4%BA%BA%E8%A2%AB%E9%86%89%E6%B1%89%E6%8D%85%E6%AD%BB&amp;from=100041" onclick="shenmaHotWordsClick(event); return false">女艺人被醉汉捅死</a></li>
+        <li><a href="http://m.yz.sm.cn/s?q=%E6%BB%B4%E6%BB%B4%E5%89%AF%E6%80%BB%E8%A3%81%E7%A6%BB%E8%81%8C&amp;from=100041" onclick="shenmaHotWordsClick(event); return false">滴滴副总裁离职</a></li>
+        <li><a href="http://m.yz.sm.cn/s?q=%E6%9D%8E%E4%B8%9C%E5%81%A5%E8%B5%B5%E8%83%A4%E7%86%99%E7%BB%93%E5%A9%9A&amp;from=100041" onclick="shenmaHotWordsClick(event); return false">李东健赵胤熙结婚</a></li>
+        <li><a href="http://m.yz.sm.cn/s?q=%E6%9E%97%E5%BF%97%E7%8E%B2%E4%B8%8E%E5%AF%8C%E5%95%86%E5%91%8A%E5%90%B9&amp;from=100041" onclick="shenmaHotWordsClick(event); return false">林志玲与富商告吹</a></li>
+        <li><a href="http://m.yz.sm.cn/s?q=%E6%89%BE%E4%B8%8D%E5%88%B0%E8%BD%A6%E4%BD%8D%E8%87%AA%E5%B7%B1%E7%94%BB&amp;from=100041" onclick="shenmaHotWordsClick(event); return false">找不到车位自己画</a></li>
+        <li><a href="http://m.yz.sm.cn/s?q=%E8%88%92%E6%B7%87%E5%B4%A9%E6%BA%83%E6%99%92%E8%87%AA%E6%8B%8D%E7%85%A7&amp;from=100041" onclick="shenmaHotWordsClick(event); return false">舒淇崩溃晒自拍照</a></li>
+    </ul>
+</div>
+<div class="list_content">
+</div>
+<div class="list_bottom">
+    <section class="loadmoretip"><a href="https://m.toutiao.com/search/?need_open_window=1#"></a></section>
+</div>
+</content>
+<script type="text/javascript" charset="utf-8" src="js/search.js"></script>
+</body>
+</html>

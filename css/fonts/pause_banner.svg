@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>pause_banner</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="28" cy="28" r="28"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="56" height="56" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M21.7003552,29.1919615 C20.7634878,28.6066659 20.7682271,27.6568035 21.704532,27.0743711 L39.0836118,16.2636412 C40.0227859,15.6794239 40.7860964,16.0988749 40.788509,17.1985289 L40.8366853,39.1571576 C40.8390999,40.2576991 40.0747435,40.6711197 39.1447088,40.0900927 L21.7003552,29.1919615 Z" id="path-3"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="banner" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="WAP-banner-新闻-修改" transform="translate(-49.000000, -1256.000000)">
+            <g id="pause_banner" transform="translate(49.000000, 1256.000000)">
+                <use id="Playline" stroke-opacity="0.5" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="2" fill-opacity="0.25" fill="#000000" xlink:href="#path-1"></use>
+                <g id="前进" transform="translate(30.918346, 28.176467) scale(-1, 1) translate(-30.918346, -28.176467) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
